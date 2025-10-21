@@ -7,16 +7,16 @@ It supports CRUD operations, filtering by string properties, and intelligent nat
 
 ## 🚀 Features
 
-- ✅ **Create a new string** and analyze its properties
-- 🔍 **Get specific strings** using the string value
-- ⚙️ **Filter strings** using query parameters (e.g., min length, palindrome, etc.)
-- 🗣️ **Filter using Natural Language (NLP)** (e.g., “show me palindromic strings longer than 5 characters”)
-- ❌ **Delete strings** from the in-memory database
-- 🔒 Includes proper **error handling** and **status codes**
+- **Create a new string** and analyze its properties
+- **Get specific strings** using the string value
+- **Filter strings** using query parameters (e.g., min length, palindrome, etc.)
+- **Filter using Natural Language (NLP)** (e.g., “show me palindromic strings longer than 5 characters”)
+- **Delete strings** from the in-memory database
+- Includes proper **error handling** and **status codes**
 
 ---
 
-## 🧩 Tech Stack
+## Tech Stack
 
 - **Language:** Python 3.10+
 - **Framework:** FastAPI
@@ -26,7 +26,7 @@ It supports CRUD operations, filtering by string properties, and intelligent nat
 
 ---
 
-## 🛠️ Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the Repository
 
@@ -54,9 +54,9 @@ uvicorn main:app --reload
 
 ---
 
-## 📍 API Endpoints
+## API Endpoints
 
-### 🧾 1. **Create a String**
+### 1. **Create a String**
 
 **POST** `/strings/`
 
@@ -90,7 +90,7 @@ uvicorn main:app --reload
 
 ---
 
-### 🔍 2. **Get a Specific String**
+### 2. **Get a Specific String**
 
 **GET** `/strings/{string_value}`
 Returns the analyzed data for that exact string.
@@ -100,7 +100,7 @@ Returns the analyzed data for that exact string.
 
 ---
 
-### 🧮 3. **Filter Strings (Query Parameters)**
+### 3. **Filter Strings (Query Parameters)**
 
 **GET** `/strings/`
 
@@ -119,7 +119,7 @@ Returns the analyzed data for that exact string.
 
 ---
 
-### 🗣️ 4. **Filter by Natural Language Query**
+### 4. **Filter by Natural Language Query**
 
 **GET** `/strings/filter-by-natural-language?query={query}`
 
@@ -149,14 +149,14 @@ list strings that are not palindrome and have more than one word
 
 ---
 
-### 🗑️ 5. **Delete a String**
+### 5. **Delete a String**
 
 **DELETE** `/strings/{string_value}`
 Deletes a specific string by its SHA-256 ID or value.
 
 ---
 
-## ⚠️ Error Handling
+## Error Handling
 
 | Status Code                  | Description                            | Example Cause                            |
 | ---------------------------- | -------------------------------------- | ---------------------------------------- |
@@ -167,7 +167,7 @@ Deletes a specific string by its SHA-256 ID or value.
 
 ---
 
-## 🧠 NLP Logic (Simplified)
+## NLP Logic (Simplified)
 
 The NLP filter uses keyword and regex matching to interpret human-like queries:
 
@@ -182,7 +182,7 @@ The NLP filter uses keyword and regex matching to interpret human-like queries:
 
 ---
 
-## 💡 Future Improvements
+## Future Improvements
 
 - Integrate **spaCy** for more accurate NLP query understanding
 - Add **persistent storage** (SQLite or PostgreSQL)
@@ -191,7 +191,7 @@ The NLP filter uses keyword and regex matching to interpret human-like queries:
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **David Ihegaranya**
 Computer Engineering Student • Graphics Designer • Developer
