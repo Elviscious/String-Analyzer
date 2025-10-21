@@ -7,21 +7,21 @@ It supports CRUD operations, filtering by string properties, and intelligent nat
 
 ## 🚀 Features
 
-- ✅ **Create a new string** and analyze its properties  
-- 🔍 **Get specific strings** using the string value  
-- ⚙️ **Filter strings** using query parameters (e.g., min length, palindrome, etc.)  
-- 🗣️ **Filter using Natural Language (NLP)** (e.g., “show me palindromic strings longer than 5 characters”)  
-- ❌ **Delete strings** from the in-memory database  
+- ✅ **Create a new string** and analyze its properties
+- 🔍 **Get specific strings** using the string value
+- ⚙️ **Filter strings** using query parameters (e.g., min length, palindrome, etc.)
+- 🗣️ **Filter using Natural Language (NLP)** (e.g., “show me palindromic strings longer than 5 characters”)
+- ❌ **Delete strings** from the in-memory database
 - 🔒 Includes proper **error handling** and **status codes**
 
 ---
 
 ## 🧩 Tech Stack
 
-- **Language:** Python 3.10+  
-- **Framework:** FastAPI  
-- **Database:** In-memory dictionary (for simplicity)  
-- **Hashing:** SHA-256 for unique string identification  
+- **Language:** Python 3.10+
+- **Framework:** FastAPI
+- **Database:** In-memory dictionary (for simplicity)
+- **Hashing:** SHA-256 for unique string identification
 - **Natural Language Parsing:** Regex & string-based rules (extendable with spaCy)
 
 ---
@@ -29,10 +29,11 @@ It supports CRUD operations, filtering by string properties, and intelligent nat
 ## 🛠️ Setup Instructions
 
 ### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/your-username/string-analyzer.git
 cd string-analyzer
-````
+```
 
 ### 2. Install Dependencies
 
@@ -48,8 +49,8 @@ uvicorn main:app --reload
 
 ### 4. Access the Documentation
 
-* **Swagger UI:** [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
-* **ReDoc:** [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
+- **Swagger UI:** [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+- **ReDoc:** [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
 
 ---
 
@@ -61,7 +62,7 @@ uvicorn main:app --reload
 
 ```json
 {
-  "value": "madam"
+	"value": "madam"
 }
 ```
 
@@ -69,21 +70,21 @@ uvicorn main:app --reload
 
 ```json
 {
-  "id": "09b9c392dc1f6e914cea287cb6be34b0...",
-  "value": "madam",
-  "properties": {
-    "length": 5,
-    "is_palindrome": true,
-    "unique_characters": 3,
-    "word_count": 1,
-    "sha256_hash": "09b9c392dc1f6e914cea287cb6be34b0...",
-    "character_frequency_map": {
-      "m": 2,
-      "a": 2,
-      "d": 1
-    },
-    "created_at": "2025-10-17T09:32:10.123Z"
-  }
+	"id": "09b9c392dc1f6e914cea287cb6be34b0...",
+	"value": "madam",
+	"properties": {
+		"length": 5,
+		"is_palindrome": true,
+		"unique_characters": 3,
+		"word_count": 1,
+		"sha256_hash": "09b9c392dc1f6e914cea287cb6be34b0...",
+		"character_frequency_map": {
+			"m": 2,
+			"a": 2,
+			"d": 1
+		},
+		"created_at": "2025-10-17T09:32:10.123Z"
+	}
 }
 ```
 
@@ -183,16 +184,15 @@ The NLP filter uses keyword and regex matching to interpret human-like queries:
 
 ## 💡 Future Improvements
 
-* Integrate **spaCy** for more accurate NLP query understanding
-* Add **persistent storage** (SQLite or PostgreSQL)
-* Add **authentication** for data management
-* Deploy to **Render / Railway / Vercel**
+- Integrate **spaCy** for more accurate NLP query understanding
+- Add **persistent storage** (SQLite or PostgreSQL)
+- Add **authentication** for data management
+- Deploy to **Render / Railway / Vercel**
 
 ---
 
 ## 👨‍💻 Author
 
-**David Elvis**
+**David Ihegaranya**
 Computer Engineering Student • Graphics Designer • Developer
 Passionate about building tools that simplify complex problems.
-
